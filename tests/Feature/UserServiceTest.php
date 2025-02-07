@@ -25,7 +25,7 @@ class UserServiceTest extends TestCase
     public function testLoginSuccess()
     {
         $this->seed(UserSeeder::class);
-        self::assertTrue($this->userService->login("eko@localhost", "rahasia"));
+        self::assertTrue($this->userService->login("kande@localhost", "rahasia"));
     }
 
     public function testLoginUserNotFound()

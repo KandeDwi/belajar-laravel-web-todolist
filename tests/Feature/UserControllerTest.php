@@ -36,7 +36,7 @@ class UserControllerTest extends TestCase
         $this->seed(UserSeeder::class);
 
         $this->post('/login', [
-            "user" => "eko@localhost",
+            "user" => "kande@localhost",
             "password" => "rahasia"
         ])->assertRedirect("/")
             ->assertSessionHas("user", "eko@localhost");
